@@ -10,7 +10,6 @@ class App extends React.Component {
         { name: "Екатеринбург", zip: "1486209" },
         { name: "Курган", zip: "1501321" },
         { name: "Якутск", zip: "2013159" },
-
     ]
 
     state = {
