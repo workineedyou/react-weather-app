@@ -17,8 +17,8 @@ class App extends React.Component {
         activePlace: 0
     }
 
-    renderButtons(items) {
-        return items.map((item, index) => {
+    renderButtons(places) {
+        return places.map((item, index) => {
 
             let clazz = 'btn btn-danger m-2 mt-5 mb-5'
 
@@ -51,7 +51,7 @@ class App extends React.Component {
         return (
             <div className="app container">
                 { buttons }
-                <WeatherDisplay zipCode={ zipCode } activeBtn={ activePlace } />
+                <WeatherDisplay zipCode={ zipCode } />
             </div>
         )
     }
